@@ -1,16 +1,16 @@
-<h1 style="width: max-content; font-size: 4em; border-bottom: 3px solid #00b8ff;">Collllor Landing</h1>
+<h1><strong>Collllor Landing</strong></h1>
 
 <p>
 	<img src="https://raw.githubusercontent.com/avnicolaevich/collllor_landing/master/app/img/home-fiferr.jpg" alt="Collllor Landing">
 </p>
 
-<p style="text-indent: 20px; color: #4E5452; font-size: 1.3rem; letter-spacing: 2px; font-weight: 600;">Author: <a href="https://github.com/avnicolaevich" target="_blank">Andriichuk Viktor</a></p>
+<p>Author: <a href="https://github.com/avnicolaevich" target="_blank">Andriichuk Viktor</a></p>
 
-<p style="text-indent: 20px;">Cross-browser compatibility: IE9+.</p>
+<p>Cross-browser compatibility: IE9+.</p>
 
-<p style="text-indent: 20px;">The template uses a Sass with <strong>Sass</strong> syntax and project structure with source code in the directory <strong>app/</strong> and production folder <strong>dist/</strong>, that contains ready project with optimized HTML, CSS, JS and images.</p>
+<p>The template uses a Sass with <strong>Sass</strong> syntax and project structure with source code in the directory <strong>app/</strong> and production folder <strong>dist/</strong>, that contains ready project with optimized HTML, CSS, JS and images.</p>
 
-<h2 style="width: max-content;>How to use Collllor Landing</h2>
+<h2>How to use Collllor Landing</h2>
 
 <ol>
 	<li><a href="https://github.com/avnicolaevich/collllor_landing/archive/master.zip">Download</a> <strong>Collllor Landing</strong> from GitHub;</li>
@@ -18,7 +18,7 @@
 	<li>Run the template: <strong>gulp</strong>.</li>
 </ol>
 
-<h2 style="width: max-content;>Gulp tasks:</h2>
+<h2>Gulp tasks:</h2>
 
 <ul>
 	<li><strong>gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
