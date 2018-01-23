@@ -1,7 +1,7 @@
 <h1><strong>Collllor Landing</strong></h1>
 
 <p>
-	<img src="https://raw.githubusercontent.com/avnicolaevich/collllor_landing/master/app/img/home-fiferr.jpg" alt="Collllor Landing">
+	<img src="https://raw.githubusercontent.com/avnicolaevich/collllor_landing/master/app/img/Collllor.jpg" alt="Collllor Landing">
 </p>
 
 <p>Author: <a href="https://github.com/avnicolaevich" target="_blank">Andriichuk Viktor</a></p>
