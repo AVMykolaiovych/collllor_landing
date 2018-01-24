@@ -6,29 +6,33 @@
 @import "owl.theme.green"
 
 *
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
 	box-sizing: border-box
 	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
 		box-sizing: border-box
-
 *::-webkit-input-placeholder
-	color: #666
+	color: #302f35
 	opacity: 1
-
 *:-moz-placeholder
-	color: #666
+	color: #302f35
 	opacity: 1
-
 *::-moz-placeholder
-	color: #666
+	color: #302f35
 	opacity: 1
-
 *:-ms-input-placeholder
-	color: #666
+	color: #302f35
 	opacity: 1
+input:focus::-webkit-input-placeholder
+    opacity: 0
+    transition: opacity 0.4s ease
+input:focus::-moz-placeholder
+    opacity: 0
+    transition: opacity 0.4s ease
+input:focus:-moz-placeholder
+    opacity: 0
+    transition: opacity 0.4s ease
+input:focus:-ms-input-placeholder
+    opacity: 0
+    transition: opacity 0.4s ease
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -44,8 +48,9 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1
 	font-family: $mainFont
+	background: #fff
 	overflow-x: hidden
 	opacity: 1
 
@@ -53,5 +58,253 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+
+h1, h2, h3, h4, h5, h6, p, ul
+    margin: 0
+    padding: 0
+    outline: 0
+
+/*Header*/
+.header
+    position: fixed
+    width: 100%
+    height: 80px
+    top: 0
+    background-color: transparent
+    z-index: 2
+    overflow: hidden
+    &__wrapper
+        position: relative
+        max-width: 1400px
+        min-width: 320px
+        height: 80px
+        margin: 0 auto
+        padding: 0 30px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &__auth
+        display: flex
+        margin: auto 0 auto auto
+        &-list
+            list-style-type: none
+            display: flex
+            align-items: center
+            &-item
+                display: flex
+                padding: 0 30px
+                position: relative
+                &:last-of-type
+                    padding: 0 0 0 30px
+                &:first-of-type
+                    border-right: 1px solid #fff
+            &-link
+                position: relative
+                color: $headerNavLinkColor
+                font-size: 18px
+                transition: color .2s
+                &:hover, &:focus
+                    text-decoration: none
+                    color: $mainColor
+/*Header end*/
+
+/*Topping*/
+.topping
+    position: relative
+    background: #000
+    &__carousel
+        & > img
+            height: 520px
+        &-content
+            position: absolute
+            z-index: 3
+            top: 0
+            right: 0
+            height: 100%
+            width: 100%
+            color: #fff
+            font-size: 18px
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            text-align: center
+            &-heading
+                font-family: $mainFontBold
+                font-size: 51px
+                padding-bottom: 15px
+            &-subheading
+                font-family: $mainFontBold
+                font-size: 24px
+    &__container
+        position: absolute
+        z-index: 3
+        max-width: 450px
+        width: 100%
+        margin: 0 auto
+        bottom: 25%
+        left: 50%
+        transform: translateX(-50%)
+        &-form
+            width: 100%
+            &-search
+                max-width: 320px
+                width: 100%
+                height: 50px
+                border-radius: 3px 0 0 3px
+                border: none
+                font-family: $mainFontBold
+                font-size: 20px
+                background-color: #fff
+                padding: 7px 15px 7px 15px
+                box-shadow: inset 0 3px 9px rgba(0,0,0,0.08)
+                transition: background-color .2s,border-color .2s,width .2s
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+                outline: none
+            &-button
+                height: 50px
+                border-radius: 0 3px 3px 0
+                background-color: $headerButtonBG
+                color: #fff
+                font-family: $mainFontBold
+                font-size: 21px
+                border: none
+                padding: 15px 30px
+                width: 130px
+                margin: 0
+                float: right
+                display: inline-block
+                text-shadow: 0 -1px 1px rgba(0,0,0,0.2)
+                transition: all .2s
+
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility:    hidden
+    -ms-backface-visibility:     hidden
+    -webkit-transform: translate3d(0,0,0)
+    -moz-transform: translate3d(0,0,0)
+    -ms-transform: translate3d(0,0,0)
+/*Topping end*/
+
+/*Explore*/
+.explore
+    padding-top: 30px
+    margin-bottom: 100px
+    &__heading
+        text-align: center
+        color: #000
+        font-family: $mainFontBold
+        font-size: 38px
+        padding-bottom: 10px
+    &__subheading
+        text-align: center
+        color: #000
+        font-family: $mainFont
+        font-size: 18px
+        padding-bottom: 60px
+    &__wrapper
+        cursor: pointer
+        height: 240px
+        overflow: hidden
+        &:hover .explore__idea-heading:before
+            transform: scaleX(3)
+        &:hover .explore__idea-subheading
+            opacity: 1
+            padding-top: 10px
+    &__idea
+        display: block
+        text-decoration: none
+        position: relative
+        &:hover, &:focus
+            text-decoration: none
+        &-heading
+            text-align: center
+            color: #000
+            font-size: 18px
+            padding-bottom: 20px
+            &:before
+                content: ''
+                display: block
+                width: 80px
+                height: 0
+                margin: 10px auto
+                border-top: 1px solid $headerButtonBG
+                transition: transform 0.12s cubic-bezier(0,0,0.15,0.88)
+        &-subheading
+            display: block
+            text-align: center
+            color: #999999
+            font-size: 16px
+            opacity: 0
+            padding-top: 20px
+            transition: all .3s
+.idea-printing:before
+    content: ''
+    background: url('../img/icons/icon_map.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-packaging:before
+    content: ''
+    background: url('../img/icons/icon_packaging.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-displays:before
+    content: ''
+    background: url('../img/icons/icon_display.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-size:before
+    content: ''
+    background: url('../img/icons/icon_size.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-sublimation:before
+    content: ''
+    background: url('../img/icons/icon_sublimation.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-embroidery:before
+    content: ''
+    background: url('../img/icons/icon_embroidery.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-3d:before
+    content: ''
+    background: url('../img/icons/icon_3D.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+.idea-design:before
+    content: ''
+    background: url('../img/icons/icon_design.svg') center no-repeat
+    display: block
+    background-size: 56px 50px
+    width: 56px
+    height: 50px
+    margin: 0 auto
+/*Explore end*/
 
 @import "media" // Всегда в конце
