@@ -6,6 +6,12 @@
 @media only screen and (max-width : 1199px)
     .topping__container
         bottom: 5%
+    .topping__carousel-content-heading
+        font-size: 36px
+    .topping__carousel-content-subheading
+        font-size: 20px
+    .footer__list-item
+        text-align: center
 
 
 /* Medium Devices, Desktops */
@@ -34,21 +40,88 @@
         top: 45%
     .header__search
         width: 40%
+    .explore__idea-subheading
+        display: none
+    .explore__wrapper:hover .explore__idea-heading:before
+        transform: none
+    .explore__wrapper
+        height: 150px
+    .guides__button
+        max-width: 300px
+        width: 100%
+        margin: 30px auto
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
     .bodyWrapper
-        padding-top: 80px
+        padding-top: 100px
     .header__wrapper
         background: #f3f3f3
+        height: 100px
     .header__auth-list-link
         color: #777777
     .header__mobile-menu:before
         color: #777777
-
+    .topping
+        padding-top: 80px
+    .explore__wrapper
+        width: max-content
+        max-width: 300px
+        margin: auto
+        height: 110px
+    .header__search
+        width: 100%
+        order: 3
+        opacity: 1
+        visibility: visible
+        margin-top: -15px
+    .header__search-form-search
+        max-width: 100%
+    .topping__container
+        display: none
+    .header__auth
+        margin: 0
+    .header__logo
+        display: inline-block
+        padding: 0 10px
+        margin: 0 auto
+    .header__auth-list-item:last-of-type
+        padding-left: 0
+    .topping__carousel-content-heading
+        font-size: 22px
+    .topping__carousel-content-subheading
+        font-size: 14px
+    .explore__subheading
+        padding-bottom: 30px
+    .footer__newsletter-input
+        display: inline-block
+        line-height: 50px
+    .guides__image
+        margin: 0 auto
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
-	/**/
-
+    .header__auth-list-item:last-of-type
+        display: none
+    .header__logo
+        margin: auto 0 auto auto
+        padding-right: 0
+    .topping__carousel-content-heading
+        font-size: 18px
+    .topping__carousel-content-subheading
+        font-size: 12px
+    .footer__newsletter-form
+        line-height: 1
+    .footer__newsletter-label.icon-mail:before
+        top: 31px
+        left: 04px
+    .footer__newsletter-input
+        display: block
+        line-height: 1
+    .footer__newsletter
+        max-width: 200px
+    .footer__newsletter-label
+        padding-top: 9px
+    .footer
+        height: 65px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

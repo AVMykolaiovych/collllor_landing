@@ -21,18 +21,32 @@
 </head>
 
 <body>
+<div class="header__mobileNav">
+    <ul class="header__mobileNav-list">
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Become a seller</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Sign in</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Printing</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Packaging</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Signage Displays</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Custom Sizes</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Sublimation</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Embroidery</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">3D</a></li>
+        <li class="header__mobileNav-item"><a class="header__mobileNav-link" href="#!">Design for Print</a></li>
+    </ul>
+</div>
+<div class="body__mask"></div>
 <div id="bodyWrapper">
 <div class="main__wrapper-header">
 	<header class="header">
 		<div class="header__wrapper">
-            <a class="header__mobile-menu icon-menu" href="#!"></a>
+            <a class="header__mobile-menu icon-menu" id="mobileNav" href="#!"></a>
 			<a class="header__logo" href="javascript:void(0);">
 				<img class="img-responsive" src="./img/collllor_logo.png" alt="Collllor">
 			</a>
-            <div class="header__search">
+            <div class="header__search icon-search">
                 <form action="" class="header__search-form">
                     <input class="header__search-form-search" name="search" placeholder="Try Brochures" type="text" autocomplete="off">
-                    <a type="submit" class="header__search-form-button">Search</a>
                 </form>
             </div>
 			<nav class="header__auth">
@@ -45,40 +59,6 @@
 					</li>
 				</ul>
 			</nav>
-            <div class="header__mobileNav">
-                <ul class="header__mobileNav-list" id="mobileNav">
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            Why Tudubuddy?
-                        </a>
-                    </li>
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            How it works?
-                        </a>
-                    </li>
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            Testimonials
-                        </a>
-                    </li>
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            Feature
-                        </a>
-                    </li>
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            Our Prices
-                        </a>
-                    </li>
-                    <li class="header__mobileNav-item">
-                        <a class="header__mobileNav-link" href="#!">
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="header__wrapperExplore">
 			<nav class="header__explore">
@@ -159,7 +139,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-printing" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Printing</h5>
@@ -169,7 +149,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-packaging" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Packaging</h5>
@@ -177,7 +157,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-displays" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Signage Displays</h5>
@@ -185,7 +165,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-size" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Custom Sizes</h5>
@@ -195,7 +175,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-sublimation" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Sublimation</h5>
@@ -203,7 +183,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-embroidery" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Embroidery</h5>
@@ -211,7 +191,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-3d" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">3D</h5>
@@ -219,7 +199,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-xs-6 col-sm-3 col-md-3">
 					<div class="explore__wrapper">
 						<a class="explore__idea idea-design" href="javascript:void(0);">
 							<h5 class="explore__idea-heading">Design for Print</h5>
@@ -230,7 +210,172 @@
 			</div>
 		</div>
 	</section>
+    <section class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="videoOwl" class="owl-carousel">
+                        <figure class="video__carousel">
+                            <figcaption class="video__carousel-content">
+                                <h3 class="video__carousel-content-heading">Extensive research done in a minute (1)</h3>
+                                <p class="video__carousel-content-subheading">
+                                    Where else can you so quickly estimate your printing budget?  On collllor in a few
+                                    minutes you know exactly what you are looking at
+                                </p>
+                                <p class="video__carousel-content-text">Boice-Terrel Allen, Podcaster, Talk music talk</p>
+                            </figcaption>
+                            <video class="video__carousel-box">
+                                <source src="./img/media/example.mov" type="video/mp4">
+                            </video>
+                        </figure>
+                        <figure class="video__carousel">
+                            <figcaption class="video__carousel-content">
+                                <h3 class="video__carousel-content-heading">Extensive research done in a minute (2)</h3>
+                                <p class="video__carousel-content-subheading">
+                                    Where else can you so quickly estimate your printing budget?  On collllor in a few
+                                    minutes you know exactly what you are looking at
+                                </p>
+                                <p class="video__carousel-content-text">Boice-Terrel Allen, Podcaster, Talk music talk</p>
+                            </figcaption>
+                            <video class="video__carousel-box">
+                                <source src="./img/media/example.mov" type="video/mp4">
+                            </video>
+                        </figure>
+                        <figure class="video__carousel">
+                            <figcaption class="video__carousel-content">
+                                <h3 class="video__carousel-content-heading">Extensive research done in a minute (3)</h3>
+                                <p class="video__carousel-content-subheading">
+                                    Where else can you so quickly estimate your printing budget?  On collllor in a few
+                                    minutes you know exactly what you are looking at
+                                </p>
+                                <p class="video__carousel-content-text">Boice-Terrel Allen, Podcaster, Talk music talk</p>
+                            </figcaption>
+                            <video class="video__carousel-box">
+                                <source src="./img/media/example.mov" type="video/mp4">
+                            </video>
+                        </figure>
+                        <figure class="video__carousel">
+                            <figcaption class="video__carousel-content">
+                                <h3 class="video__carousel-content-heading">Extensive research done in a minute (4)</h3>
+                                <p class="video__carousel-content-subheading">
+                                    Where else can you so quickly estimate your printing budget?  On collllor in a few
+                                    minutes you know exactly what you are looking at
+                                </p>
+                                <p class="video__carousel-content-text">Boice-Terrel Allen, Podcaster, Talk music talk</p>
+                            </figcaption>
+                            <video class="video__carousel-box">
+                                <source src="./img/media/example.mov" type="video/mp4">
+                            </video>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="guides">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="guides__heading">Collllor Guides</h2>
+                    <p class="guides__subheading">How to use Collllor to build and grow your brand</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <figure class="guides__image">
+                        <img class="img-responsive" src="./img/guides_slide-1.jpg" alt="Guides">
+                        <figcaption class="guides__image-description">
+                            <h4 class="guides__image-description-heading">Building your bevarage brand</h4>
+                            <p class="guides__image-description-subheading">Prepare your product, your labels, your catalog</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <figure class="guides__image">
+                        <img class="img-responsive" src="./img/guides_slide-2.jpg" alt="Guides">
+                        <figcaption class="guides__image-description">
+                            <h4 class="guides__image-description-heading">Differentiating restaurant business</h4>
+                            <p class="guides__image-description-subheading">From take-out packaging to a team uniform</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <figure class="guides__image">
+                        <img class="img-responsive" src="./img/guides_slide-3.jpg" alt="Guides">
+                        <figcaption class="guides__image-description">
+                            <h4 class="guides__image-description-heading">Running a fashion brand </h4>
+                            <p class="guides__image-description-subheading">Color in fashion -materials, methods, manufacturers</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="guides__button">
+                        <a class="guides__button-link" type="submit" href="javascript:void(0);">Watch more guides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <div class="footer__newsletter">
+                    <form class="footer__newsletter-form">
+                        <label class="footer__newsletter-label icon-mail" for="email">Sign up for news</label>
+                        <input type="email" name="email" id="email" class="footer__newsletter-input" placeholder="Enter Email Address">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-offset-1 col-md-2">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Office Information</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">About Us</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Contact Us</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Government</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Make Money with Us</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Sell on collllor</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Seller Information Center</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Resources</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Glossary</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">FAQ</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Templates</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Policies</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Shipping & Delivery</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Cancellations and Returns</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Rules & Regulations</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Security Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Let Us Help You</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Resolution Center</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Design and Technical Services</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Request a Call Back</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="#!">Help Us To Become Better</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 	<script src="js/scripts.min.js"></script>
 
 </body>
