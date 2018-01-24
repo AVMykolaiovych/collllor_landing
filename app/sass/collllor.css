@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'collllor';
-  src: url('../fonts/fontello/collllor.eot?97487053');
-  src: url('../fonts/fontello/collllor.eot?97487053#iefix') format('embedded-opentype'),
-       url('../fonts/fontello/collllor.woff2?97487053') format('woff2'),
-       url('../fonts/fontello/collllor.woff?97487053') format('woff'),
-       url('../fonts/fontello/collllor.ttf?97487053') format('truetype'),
-       url('../fonts/fontello/collllor.svg?97487053#collllor') format('svg');
+  src: url('../fonts/fontello/collllor.eot?77320108');
+  src: url('../fonts/fontello/collllor.eot?77320108#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/collllor.woff2?77320108') format('woff2'),
+       url('../fonts/fontello/collllor.woff?77320108') format('woff'),
+       url('../fonts/fontello/collllor.ttf?77320108') format('truetype'),
+       url('../fonts/fontello/collllor.svg?77320108#collllor') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'collllor';
-    src: url('../font/collllor.svg?97487053#collllor') format('svg');
+    src: url('../font/collllor.svg?77320108#collllor') format('svg');
   }
 }
 */
@@ -55,6 +55,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-search:before { content: '\e800'; } /* '' */
 .icon-mail:before { content: '\e801'; } /* '' */
 .icon-right:before { content: '\e802'; } /* '' */
 .icon-left:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */

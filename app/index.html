@@ -21,14 +21,23 @@
 </head>
 
 <body>
+<div id="bodyWrapper">
+<div class="main__wrapper-header">
 	<header class="header">
 		<div class="header__wrapper">
+            <a class="header__mobile-menu icon-menu" href="#!"></a>
 			<a class="header__logo" href="javascript:void(0);">
 				<img class="img-responsive" src="./img/collllor_logo.png" alt="Collllor">
 			</a>
+            <div class="header__search">
+                <form action="" class="header__search-form">
+                    <input class="header__search-form-search" name="search" placeholder="Try Brochures" type="text" autocomplete="off">
+                    <a type="submit" class="header__search-form-button">Search</a>
+                </form>
+            </div>
 			<nav class="header__auth">
 				<ul class="header__auth-list">
-					<li class="header__auth-list-item">
+					<li class="header__auth-list-item hidden-sm hidden-xs">
 						<a class="header__auth-list-link" href="javascript:void(0);">Become a seller</a>
 					</li>
 					<li class="header__auth-list-item">
@@ -36,8 +45,73 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
+            <div class="header__mobileNav">
+                <ul class="header__mobileNav-list" id="mobileNav">
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            Why Tudubuddy?
+                        </a>
+                    </li>
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            How it works?
+                        </a>
+                    </li>
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            Feature
+                        </a>
+                    </li>
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            Our Prices
+                        </a>
+                    </li>
+                    <li class="header__mobileNav-item">
+                        <a class="header__mobileNav-link" href="#!">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__wrapperExplore">
+			<nav class="header__explore">
+                <ul class="header__explore-list">
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Printing</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Packaging</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Signage Displays</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Custom Sizes</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Sublimation</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Embroidery</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">3D</a>
+                    </li>
+                    <li class="header__explore-list-item">
+                        <a class="header__explore-list-link" href="javascript:void(0);">Design for Print</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 	</header>
+</div>
 	<section class="topping">
 		<div id="headerOwl" class="owl-carousel">
 			<figure class="topping__carousel">
@@ -156,6 +230,7 @@
 			</div>
 		</div>
 	</section>
+</div>
 	<script src="js/scripts.min.js"></script>
 
 </body>

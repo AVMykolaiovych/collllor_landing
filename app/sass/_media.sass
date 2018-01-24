@@ -4,18 +4,46 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
-	/**/
+    .topping__container
+        bottom: 5%
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
-	/**/
-
-
+    .header__mobile-menu
+        display: block
+    .topping__container
+        position: static
+        width: 100%
+        transform: translateX(0)
+        padding: 20px
+        max-width: 100%
+    .topping__container-form-search
+        max-width: 100%
+        padding: 7px 130px 7px 15px
+        border-radius: 3px
+    .topping__container-form-button
+        position: absolute
+        right: 20px
+        top: 20px
+    .topping__carousel-content-heading
+        font-size: 36px
+    .topping__carousel-content-subheading
+        font-size: 20px
+    .topping__carousel-content
+        top: 45%
+    .header__search
+        width: 40%
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
-	/**/
-
+    .bodyWrapper
+        padding-top: 80px
+    .header__wrapper
+        background: #f3f3f3
+    .header__auth-list-link
+        color: #777777
+    .header__mobile-menu:before
+        color: #777777
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
