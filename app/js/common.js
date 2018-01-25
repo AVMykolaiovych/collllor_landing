@@ -11,14 +11,15 @@ $(function() {
         animateOut: 'fadeOut',
         items: 1
     });
-    var videoOwlCarousel = $('#videoOwl');
     // Carousel initialization
-    videoOwlCarousel.owlCarousel({
+    $('#videoOwl').owlCarousel({
+        items:1,
         nav: true,
         navText: '',
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        items: 1
+        merge: true,
+        loop: true,
+        smartSpeed: 600,
+        center: true
     });
 
     var header = $(".header");

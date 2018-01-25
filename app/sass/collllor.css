@@ -57,6 +57,7 @@
  
 .icon-search:before { content: '\e800'; } /* '' */
 .icon-mail:before { content: '\e801'; } /* '' */
-.icon-right:before { content: '\e802'; } /* '' */
-.icon-left:before { content: '\e803'; } /* '' */
+.icon-play:before { content: '\e802'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-left:before { content: '\f104'; } /* '' */
+.icon-right:before { content: '\f105'; } /* '' */
