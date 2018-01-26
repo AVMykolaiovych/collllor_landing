@@ -468,10 +468,10 @@ h1, h2, h3, h4, h5, h6, p, ul
         position: relative
         &-content
             position: absolute
-            top: 20%
-            left: 0
-            max-width: 305px
+            max-width: 320px
             width: 100%
+            top: 20%
+            z-index: 0
             &-heading
                 font-size: 29px
                 color: #fff
@@ -482,12 +482,6 @@ h1, h2, h3, h4, h5, h6, p, ul
                 padding-top: 10px
                 color: #fff
                 text-decoration: underline
-        &-box
-            position: relative
-            display: block
-            float: right
-            width: 330px
-            height: 300px
 #welcomeOwl.owl-carousel
     .owl-dots
         position: absolute
@@ -509,6 +503,24 @@ h1, h2, h3, h4, h5, h6, p, ul
         transition: background-color 0.4s
     .active
         background-color: transparent
+.welcomeOwl1__item,
+.welcomeOwl2__item,
+.welcomeOwl3__item,
+.welcomeOwl4__item,
+.welcomeOwl5__item
+    width: 750px
+    height: 300px
+/* Fading animation */
+.fade
+    animation-name: fade
+    animation-duration: 1.5s
+
+@keyframes fade 
+    from
+        opacity: .4
+    to
+        opacity: 1
+
 /*Terms end*/
 
 /*Terms*/
@@ -860,83 +872,44 @@ h1, h2, h3, h4, h5, h6, p, ul
     text-decoration: none
 /*---Mobile---menu---end*/
 /*Popup Video*/
-//.popup
-//    &__video
-//        width: 100%
-//        min-height: 100%
-//        background-color: rgba(0,0,0,0.5)
-//        overflow: hidden
-//        position: fixed
-//        top: 0
-//        opacity: 0
-//    &__wrapper
-//        margin: 40px auto 0px auto
-//        width: 100px
-//        height: 40px
-//        padding: 10px
-//        background-color: #c5c5c5
-//        border-radius: 5px
-//        box-shadow: 0px 0px 10px #000
-//        &-header
-//            background: transparent
-//            padding: 0
-//            border: 0
-//            overflow: visible
-//            border-radius: 5px 5px 0 0
-//            position: relative
-//        &-link
-//            top: -40px
-//            right: -40px
-//            color: #fff
-//            font-size: 40px
-//            line-height: 40px
-//            width: 40px
-//            height: 40px
-//            text-align: center
-//            font-weight: 400
-//            position: absolute
-//            z-index: 10
-//            cursor: pointer
-//        &-content
-//            padding: 0
-//            height: auto
-//            &-video
-//                background: #000
-
-.popup__video
-    display: none /* Hidden by default */
-    position: fixed /* Stay in place */
-    z-index: 1 /* Sit on top */
-    padding-top: 100px /* Location of the box */
-    left: 0
-    top: 0
-    width: 100% /* Full width */
-    height: 100% /* Full height */
-    overflow: auto /* Enable scroll if needed */
-    background-color: rgb(0,0,0) /* Fallback color */
-    background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
-
-
-/* Modal Content */
-.popup__wrapper
-    background-color: #fefefe
-    margin: auto
-    padding: 20px
-    border: 1px solid #888
-    width: 80%
+.popup
+    &__video
+        display: none
+        position: fixed
+        z-index: 9999
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: auto
+        background-color: rgba(0,0,0,0.85)
+        cursor: pointer
+    &__wrapper
+        position: relative
+        background-color: transparent
+        max-width: calc(85% - 80px)
+        width: 1920px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        height: auto
 
 
 /* The Close Button */
 .close 
-    color: #aaaaaa
+    color: #fff
+    position: absolute
+    top: -40px
     float: right
-    font-size: 28px
+    right: -34px
+    font-size: 38px
     font-weight: bold
+    transition: color .4s ease
 
 
 .close:hover,
 .close:focus 
-    color: #000
+    color: #777
     text-decoration: none
     cursor: pointer
 

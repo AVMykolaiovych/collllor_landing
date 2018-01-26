@@ -51,10 +51,12 @@ $(function() {
         }
     });
 
-    $('#welcomeOwl').owlCarousel({
+    var timeFrame = 15000;
+    var owl = $('#welcomeOwl');
+    owl.owlCarousel({
         items:1,
         // autoplay: true,
-        // autoplayTimeout: 3000,
+        autoplayTimeout: timeFrame/2,
         dots: true,
         merge: true,
         loop: true,
@@ -62,6 +64,72 @@ $(function() {
         smartSpeed: 700,
         center: true
     });
+
+
+    var lengthWelcomeOwl1 = ($('#welcomeOwl1 .welcomeOwl1__item').length)/2;
+    var welcomeOwlCarouselSecond = $('#welcomeOwl1');
+    welcomeOwlCarouselSecond.on('initialized.owl.carousel', function () {
+        welcomeOwlCarouselSecond.find(".owl-item").addClass("first");
+    }).owlCarousel({
+        items:1,
+        autoplay: true,
+        autoplayTimeout: timeFrame/lengthWelcomeOwl1,
+        merge: true,
+        // loop: true,
+        animateOut: 'fadeOut',
+        center: true
+    });
+
+    var lengthWelcomeOwl2 = ($('#welcomeOwl2 .welcomeOwl1__item').length)/2;
+    var welcomeOwlCarouselThird = $('#welcomeOwl2');
+    welcomeOwlCarouselThird.on('initialized.owl.carousel', function () {
+        welcomeOwlCarouselThird.find(".owl-item").addClass("second");
+    }).owlCarousel({
+        items:1,
+        autoplay: true,
+        autoplayTimeout: timeFrame/lengthWelcomeOwl2,
+        merge: true,
+        // loop: true,
+        animateOut: 'fadeOut',
+        center: true
+    });
+
+    var lengthWelcomeOwl3 = ($('#welcomeOwl3 .welcomeOwl1__item').length)/2;
+    var welcomeOwlCarouselFourth = $('#welcomeOwl3');
+    welcomeOwlCarouselFourth.on('initialized.owl.carousel', function () {
+        welcomeOwlCarouselFourth.find(".welcomeOwl3__item").addClass("owl-item");
+    }).owlCarousel({
+        items:1,
+        autoplay: true,
+        autoplayTimeout: timeFrame/lengthWelcomeOwl3,
+        merge: true,
+        // loop: true,
+        animateOut: 'fadeOut',
+        center: true
+    });
+
+    // var lengthWelcomeOwl4 = ($('#welcomeOwl4 .welcomeOwl1__item').length)/2;
+    // $('#welcomeOwl4').owlCarousel({
+    //     items:1,
+    //     // autoplay: true,
+    //     autoplayTimeout: timeFrame/lengthWelcomeOwl4,
+    //     merge: true,
+    //     // loop: true,
+    //     animateOut: 'fadeOut',
+    //     center: true
+    // });
+    //
+    // var lengthWelcomeOwl5 = ($('#welcomeOwl5 .welcomeOwl1__item').length)/2;
+    // $('#welcomeOwl5').owlCarousel({
+    //     items:1,
+    //     // autoplay: true,
+    //     autoplayTimeout: timeFrame/lengthWelcomeOwl5,
+    //     merge: true,
+    //     // loop: true,
+    //     animateOut: 'fadeOut',
+    //     center: true
+    // });
+
 
     var header = $(".header");
     var headerExplore = $(".header__wrapperExplore");
@@ -107,24 +175,106 @@ $(function() {
         bodyMask.removeClass('show');
     });
 
-    // Get the modal
-    var modal = document.getElementById('videoModal');
-    // Get the button that opens the modal
-    var btn = document.getElementById("openButton");
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close");
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    };
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    };
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+
+    var modal = $('#videoModal');
+    var btn = $(".video__carousel-box-play-icon");
+    var span = $(".close");
+    var popUpVideo = $("#popUpVideo");
+    btn.click (function (e) {
+        e.preventDefault();
+        modal.css("display","block");
+        popUpVideo.attr("src","img/media/example.mov");
+    });
+    span.click (function () {
+        modal.css("display","none");
+        popUpVideo.attr("src","");
+    });
+
+    $(window).click( function(event){
+        if (event.target === document.getElementById("videoModal")) {
+            modal.css("display","none");
+            popUpVideo.attr("src","");
         }
-    }
+    });
+
+
+    // $(document).ready(function () {
+    //     showSlides1();
+    // });
+    //
+    //
+    // var slideIndex = 0;
+    // function showSlides1() {
+    //     var i;
+    //     var slides = document.getElementsByClassName("welcomeOwl1");
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {slideIndex = 1}
+    //     slides[slideIndex-1].style.display = "block";
+    //     setTimeout(showSlides1, 3000); // Change image every 2 seconds
+    //     console.log(slides);
+    // }
+    // showSlides2();
+    // function showSlides2() {
+    //     var i;
+    //     var slides = document.getElementsByClassName("welcomeOwl2");
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     setTimeout(showSlides2, 2000); // Change image every 2 seconds
+    //     console.log(slides);
+    // }
+    // // showSlides3();
+    // function showSlides3() {
+    //     var i;
+    //     var slides = document.getElementsByClassName("welcomeOwl3");
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     setTimeout(showSlides3, 2000); // Change image every 2 seconds
+    //     console.log(slides);
+    // }
+    // // showSlides4();
+    // function showSlides4() {
+    //     var i;
+    //     var slides = document.getElementsByClassName("welcomeOwl4");
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     setTimeout(showSlides4, 2000); // Change image every 2 seconds
+    //     console.log(slides);
+    // }
+    // showSlides5();
+    // function showSlides5() {
+    //     var i;
+    //     var slides = document.getElementsByClassName("welcomeOwl5");
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     setTimeout(showSlides5, 2000); // Change image every 2 seconds
+    //     console.log(slides);
+    // }
+
 });
