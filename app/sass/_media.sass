@@ -12,7 +12,25 @@
         font-size: 20px
     .footer__list-item
         text-align: center
-
+    .owl-prev,
+    .owl-next
+        display: none
+    #videoOwl .owl-stage-outer
+        margin: 0 auto
+    .video__carousel
+        height: 328px
+    .video__carousel-box
+        width: 600px
+    .video__carousel-content
+        width: 338px
+        padding: 10px 30px
+        margin-top: 5%
+    .video__carousel-content-subheading,
+    .video__carousel-content-text
+        width: 100%
+    #stepsOwl .owl-prev,
+    #stepsOwl .owl-next
+        display: none
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -50,6 +68,33 @@
         max-width: 300px
         width: 100%
         margin: 30px auto
+    .video__carousel-box
+        width: 100%
+        max-width: 735px
+        height: 100%
+    .video__carousel-content
+        position: absolute
+        top: 5%
+        left: 0
+        z-index: 100
+        padding: 10px 40px 10px 25px
+        text-align: left
+        margin-top: 0
+    .video__carousel-content-heading,
+    .video__carousel-content-subheading,
+    .video__carousel-content-text
+        color: #fff
+    .terms
+        background: #fff
+        padding: 20px 0 50px 0
+    .terms__heading
+        color: #000000
+    .terms__subheading
+        color: #777777
+    .terms__wrapper
+        padding-top: 30px
+    .steps
+        background: #f3f3f3
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
     .bodyWrapper
@@ -97,6 +142,25 @@
         line-height: 50px
     .guides__image
         margin: 0 auto
+    .video
+        padding: 50px 15px
+    .video__carousel
+        height: auto
+        background: none
+        border: none
+        position: static
+    .video__carousel-content
+        display: none
+    #videoOwl.owl-carousel .owl-dots
+        position: absolute
+        bottom: 0
+        margin: 0
+        left: 50%
+        transform: translateX(-50%)
+    #videoOwl.owl-carousel .owl-dot
+        background-color: #fff
+    #videoOwl.owl-carousel .owl-dot.active
+        background-color: #777
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
     .header__auth-list-item:last-of-type
@@ -122,7 +186,12 @@
         padding-top: 9px
     .footer
         height: 65px
-
+    #videoOwl.owl-carousel .owl-dots
+        width: 100%
+    #videoOwl.owl-carousel .owl-dot
+        height: 24px
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

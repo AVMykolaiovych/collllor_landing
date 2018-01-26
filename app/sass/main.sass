@@ -443,6 +443,164 @@ h1, h2, h3, h4, h5, h6, p, ul
     margin: 0 auto
 /*Explore end*/
 
+/*Terms*/
+.welcome
+    width: 100%
+    background: $mainColor
+    &__wrapper
+        max-width: 360px
+        width: 100%
+        height: 300px
+    &__heading
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 64px
+        color: #fff
+        text-align: left
+        font-family: $mainFontBold
+    &__heading > span
+        display: block
+        font-size: 86px
+        text-align: right
+    &__carousel
+        height: 300px
+        position: relative
+        &-content
+            position: absolute
+            top: 20%
+            left: 0
+            max-width: 305px
+            width: 100%
+            &-heading
+                font-size: 29px
+                color: #fff
+                line-height: 1.4
+                font-family: $mainFontBold
+            &-link
+                display: block
+                padding-top: 10px
+                color: #fff
+                text-decoration: underline
+        &-box
+            position: relative
+            display: block
+            float: right
+            width: 330px
+            height: 300px
+#welcomeOwl.owl-carousel
+    .owl-dots
+        position: absolute
+        bottom: 0
+        left: 0
+        margin: 0
+        text-align: center
+    .owl-dot.active
+        background-color: $headerButtonBG
+    .owl-dot
+        background-color: #fff
+        display: inline-block
+        width: 50px
+        height: 56px
+        margin: 0 3px
+        border-top: 26px solid transparent
+        border-bottom: 26px solid transparent
+        background-clip: padding-box
+        transition: background-color 0.4s
+    .active
+        background-color: transparent
+/*Terms end*/
+
+/*Terms*/
+.terms
+    width: 100%
+    background: $mainColor
+    padding: 80px 0
+    text-align: center
+    &__wrapper
+        max-width: 450px
+        margin: auto
+    &__heading
+        font-size: 37px
+        padding-bottom: 25px
+        color: #fff
+    &__heading > strong
+        font-family: $mainFontBold
+    &__subheading
+        color: #fff
+/*Terms end*/
+
+
+/*Steps*/
+.steps
+    padding: 60px 0
+    &__heading
+        text-align: center
+        color: #000
+        font-family: $mainFontBold
+        font-size: 38px
+        padding-bottom: 10px
+    &__subheading
+        text-align: center
+        color: #777
+        font-family: $mainFont
+        font-size: 18px
+        padding-bottom: 60px
+    &__link
+        text-decoration: none
+        display: block
+        &:hover .steps__carousel-box > img,
+        &:focus .steps__carousel-box > img
+            filter: brightness(70%)
+    &__carousel
+        position: relative
+        &-content
+            position: absolute
+            z-index: 1
+            top: 10px
+            left: 10px
+            &-subheading
+                color: #fff
+                font-size: 13px
+            &-heading
+                color: #fff
+                font-size: 27px
+                font-family: $mainFontBold
+        &-box > img
+            border-radius: 3px
+            transition: all .3s ease-in-out
+            filter: brightness(100%)
+
+#stepsOwl .owl-prev,
+#stepsOwl .owl-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    height: 75px
+    width: 75px
+    text-align: center
+    color: #555555
+    transition: color 0.4s
+    &:hover
+        color: #999999
+    &:before
+        font-size: 60px
+        font-family: 'collllor'
+        line-height: 75px
+#stepsOwl .owl-prev
+    left: -75px
+    &:before
+        content: '\f104'
+#stepsOwl .owl-next
+    left: 1140px
+    &:before
+        content: '\f105'
+#stepsOwl .owl-prev.disabled,
+#stepsOwl .owl-next.disabled
+    visibility: hidden
+    
+/*Steps end*/
+
 /*Video*/
 .video
     background: #f3f3f3
@@ -453,6 +611,7 @@ h1, h2, h3, h4, h5, h6, p, ul
         border: 1px solid #e6e6e6
         text-align: center
         font-size: 14px
+        position: relative
         &-content
             display: block
             float: left
@@ -508,8 +667,8 @@ h1, h2, h3, h4, h5, h6, p, ul
   45%
     transform: scale(1)
     animation-timing-function: ease-out
-.owl-prev,
-.owl-next
+#videoOwl .owl-prev,
+#videoOwl .owl-next
     position: absolute
     top: calc(50% - 60px)
     transform: translateY(-50%)
@@ -524,15 +683,15 @@ h1, h2, h3, h4, h5, h6, p, ul
         font-size: 60px
         font-family: 'collllor'
         line-height: 75px
-.owl-prev
-    left: -70px
+#videoOwl .owl-prev
+    left: -28px
     &:before
         content: '\f104'
-.owl-next
-    left: 1135px
+#videoOwl .owl-next
+    left: 1093px
     &:before
         content: '\f105'
-.owl-carousel 
+#videoOwl.owl-carousel
     .owl-dots
         margin: 22px 0
         text-align: center
@@ -548,7 +707,9 @@ h1, h2, h3, h4, h5, h6, p, ul
         transition: background-color 0.4s
     .active
         background-color: #b2b2b2
-///*Video end*/
+#videoOwl .owl-stage-outer
+    margin: 0 40px
+/*Video end*/
 
 /*Guides*/
 .guides
@@ -698,4 +859,86 @@ h1, h2, h3, h4, h5, h6, p, ul
     color: #555555
     text-decoration: none
 /*---Mobile---menu---end*/
+/*Popup Video*/
+//.popup
+//    &__video
+//        width: 100%
+//        min-height: 100%
+//        background-color: rgba(0,0,0,0.5)
+//        overflow: hidden
+//        position: fixed
+//        top: 0
+//        opacity: 0
+//    &__wrapper
+//        margin: 40px auto 0px auto
+//        width: 100px
+//        height: 40px
+//        padding: 10px
+//        background-color: #c5c5c5
+//        border-radius: 5px
+//        box-shadow: 0px 0px 10px #000
+//        &-header
+//            background: transparent
+//            padding: 0
+//            border: 0
+//            overflow: visible
+//            border-radius: 5px 5px 0 0
+//            position: relative
+//        &-link
+//            top: -40px
+//            right: -40px
+//            color: #fff
+//            font-size: 40px
+//            line-height: 40px
+//            width: 40px
+//            height: 40px
+//            text-align: center
+//            font-weight: 400
+//            position: absolute
+//            z-index: 10
+//            cursor: pointer
+//        &-content
+//            padding: 0
+//            height: auto
+//            &-video
+//                background: #000
+
+.popup__video
+    display: none /* Hidden by default */
+    position: fixed /* Stay in place */
+    z-index: 1 /* Sit on top */
+    padding-top: 100px /* Location of the box */
+    left: 0
+    top: 0
+    width: 100% /* Full width */
+    height: 100% /* Full height */
+    overflow: auto /* Enable scroll if needed */
+    background-color: rgb(0,0,0) /* Fallback color */
+    background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
+
+
+/* Modal Content */
+.popup__wrapper
+    background-color: #fefefe
+    margin: auto
+    padding: 20px
+    border: 1px solid #888
+    width: 80%
+
+
+/* The Close Button */
+.close 
+    color: #aaaaaa
+    float: right
+    font-size: 28px
+    font-weight: bold
+
+
+.close:hover,
+.close:focus 
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+/*Popup Video end*/
 @import "media" // Всегда в конце
