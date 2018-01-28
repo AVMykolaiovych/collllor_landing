@@ -31,6 +31,12 @@
     #stepsOwl .owl-prev,
     #stepsOwl .owl-next
         display: none
+    .welcome
+        margin-top: -30px
+    .welcome__headingMobile
+        padding-bottom: 30px
+    .welcome__carousel-inner
+        float: right
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -95,6 +101,14 @@
         padding-top: 30px
     .steps
         background: #f3f3f3
+    .welcome
+        margin-top: 0
+    .welcome__carousel
+        width: 100%
+        max-width: 735px
+        height: 100%
+    .header__explore-list-item
+        padding: 0 5px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
     .bodyWrapper
@@ -165,6 +179,24 @@
         min-height: auto
     .footer__list-link
         font-size: 16px
+    .welcome__carousel-inner
+        display: none
+    .welcome__carousel-content
+        position: static
+        margin: auto
+        padding: 20px 0
+    .welcome__carousel-content-heading
+        line-height: 1
+    .welcome__wrapperMobile
+        width: 100%
+        background: #fff
+        padding-top: 30px
+    .welcome__headingMobile
+        font-size: 42px
+    .welcome__headingMobile > span
+        font-size: 64px
+    #welcomeOwl.owl-carousel .owl-dots
+        display: none
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
     .header__auth-list-item:last-of-type

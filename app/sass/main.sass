@@ -451,6 +451,17 @@ h1, h2, h3, h4, h5, h6, p, ul
         max-width: 360px
         width: 100%
         height: 300px
+    &__wrapperMobile
+        width: 100%
+    &__headingMobile
+        font-size: 64px
+        color: #000
+        text-align: center
+        font-family: $mainFontBold
+        background: #fff
+    &__headingMobile > span
+        display: inline-block
+        font-size: 86px
     &__heading
         position: relative
         top: 50%
@@ -482,6 +493,11 @@ h1, h2, h3, h4, h5, h6, p, ul
                 padding-top: 10px
                 color: #fff
                 text-decoration: underline
+                cursor: pointer
+                transition: all .3s
+                &:hover, &:focus
+                    text-decoration: none
+                    color: #fff
 #welcomeOwl.owl-carousel
     .owl-dots
         position: absolute
@@ -503,13 +519,11 @@ h1, h2, h3, h4, h5, h6, p, ul
         transition: background-color 0.4s
     .active
         background-color: transparent
-.welcomeOwl1__item,
-.welcomeOwl2__item,
-.welcomeOwl3__item,
-.welcomeOwl4__item,
-.welcomeOwl5__item
+.welcome__carousel-inner
     width: 750px
     height: 300px
+    position: relative
+    z-index: -1
 /* Fading animation */
 .fade
     animation-name: fade
@@ -819,6 +833,7 @@ h1, h2, h3, h4, h5, h6, p, ul
             padding: 5px
         &-item:first-of-type .footer__list-link
             font-family: $mainFontBold
+            cursor: default
         &-link
             display: block
             position: relative
