@@ -3,7 +3,7 @@ $(function() {
     $('#headerOwl').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         dots: false,
         margin: 0,
         animateOut: 'fadeOut',
@@ -15,7 +15,7 @@ $(function() {
         nav: true,
         navText: '',
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         merge: true,
         loop: true,
         smartSpeed: 700,
@@ -56,7 +56,7 @@ $(function() {
     welcomeOwlCarousel.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 5000,
         dots: true,
         merge: true,
         loop: true,
